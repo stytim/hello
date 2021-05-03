@@ -13,7 +13,7 @@ SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
 find_package(glfw3 REQUIRED)
 if(TARGET glfw)
 	message(STATUS "Using installed third-party library glfw3")
-ELSE()
+else()
 	RETURN()
 
 ADD_LIBRARY(hello hello.cpp)
