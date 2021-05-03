@@ -15,6 +15,7 @@ if(TARGET glfw)
 	message(STATUS "Using installed third-party library glfw3")
 else()
 	RETURN()
+endif()
 
 ADD_LIBRARY(hello hello.cpp)
 ADD_EXECUTABLE(greet main.cpp)
